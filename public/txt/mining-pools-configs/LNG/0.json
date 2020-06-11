@@ -1,0 +1,63 @@
+{
+    "payout_addresses" : {
+	    "12aU1XRkD8FeQhqk6AG7eTuY5QKYEFbUu6" : {
+            "name": "LONGPOOL",
+            "link": "http://longpool.crypton.cf/"
+        },
+            "19WQ3gsThac4TSNAoNNWoovDoUrczMmzJu" : {
+            "name": "longpool",
+            "link": "http://longpool.crypton.cf/"
+        },
+	    "1EcU8XUREV9xAAuM1T8uB8ov5GhDg2g36e" : {
+            "name": "MNSHARE",
+            "link": "https://mnshare.info/"
+        },
+	    "1K4dhWofa7Nw3wYtCymTcRofGrhCREoakq" : {
+            "name": "LePool",
+            "link": "http://www.lepool.com.cn:8090/"
+        },
+	    "155JJBLbqyZL3W1oZuTbB2APwHe9VyffPv" : {
+            "name": "LePool",
+            "link": "http://www.lepool.com.cn:8090/"
+        },
+	    "155utTVadzjyLcJQBrwv6GuKdVsGgvrycK" : {
+            "name": "ANOMP",
+            "link": "http://anomp.com/"
+        },
+	    "1H16MFQQRwowxPm5Hu4bEsHa3qKiwzVvrV" : {
+            "name": "ASICBIT",
+            "link": "https://asicbit-pool.ru/"
+        },
+	    "125pojFgDLcvq4e65waFrKQS3UMrJvzWkR" : {
+            "name": "ASICBIT",
+            "link": "https://asicbit-pool.ru/"
+        },
+	    "12BRkUrBys1JjhdkAM2xiugUqHYKSHWHL6" : {
+            "name": "ASICBIT",
+            "link": "https://asicbit-pool.ru/"
+        }
+    },
+
+    "coinbase_tags" : {
+        "longpool": {
+            "name": "LONGPOOL",
+            "link": "http://longpool.crypton.cf/"
+        },
+        "mnshare": {
+            "name": "MNSHARE",
+            "link": "https://mnshare.info/"
+        },
+        "lepool": {
+            "name": "LePool",
+            "link": "http://www.lepool.com.cn:8090/"
+        },
+        "anomp": {
+            "name": "ANOMP",
+            "link": "http://anomp.com/"
+        },
+        "asicbit": {
+            "name": "ASICBIT",
+            "link": "https://asicbit-pool.ru/"
+        }
+    }
+}
