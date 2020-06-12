@@ -282,6 +282,9 @@ function getMinerFromCoinbaseTx(tx) {
 }
 
 function getTxTotalInputOutputValues(tx, txInputs, blockHeight) {
+        
+        if(!blockHeight) blockHeight=tx.height;
+
 	var totalInputValue = new Decimal(0);
 	var totalOutputValue = new Decimal(0);
 
