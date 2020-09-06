@@ -56,9 +56,9 @@ if (config.noInmemoryRpcCache) {
 	txCache = noopCache;
 
 } else {
-	miscCache = createMemoryLruCache(LRU(500));
-	blockCache = createMemoryLruCache(LRU(500));
-	txCache = createMemoryLruCache(LRU(2000));
+	miscCache = createMemoryLruCache(LRU(50));
+	blockCache = createMemoryLruCache(LRU(50));
+	txCache = createMemoryLruCache(LRU(200));
 }
 
 if (redisCache.active) {
