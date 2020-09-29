@@ -161,14 +161,14 @@ function getUptimeSeconds() {
 }
 
 function getChainTxStats(blockCount) {
-	return tryCacheThenRpcApi(miscCache, "getChainTxStats-" + blockCount, 1200000/5, function() {
+	return tryCacheThenRpcApi(miscCache, "getChainTxStats-" + blockCount, 120000, function() {
 		return rpcApi.getChainTxStats(blockCount);
 	});
 }
 
 
 function getAddressBalance(address) {
-	return tryCacheThenRpcApi(miscCache, "getAddressBalance-" + address, 3600000/5, function() {
+	return tryCacheThenRpcApi(miscCache, "getAddressBalance-" + address, 120000, function() {
 		return rpcApi.getAddressBalance(address);
 	});
 }
@@ -177,7 +177,7 @@ function getAddressTxids(address) {
 		return rpcApi.getAddressTxids(address);
 	};
 
-	return tryCacheThenRpcApi(txCache, "getAddressTxids-" + address, 3600000/5, rpcApiFunction);
+	return tryCacheThenRpcApi(txCache, "getAddressTxids-" + address, 120000, rpcApiFunction);
 }
 
      
