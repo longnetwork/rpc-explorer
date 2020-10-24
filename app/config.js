@@ -149,10 +149,11 @@ module.exports = {
 						//{name: "Bitcoin Cash (Testnet)", url:"http://bch-testnet.horizontalsystems.xyz", imgUrl:"/img/logo/bch.svg"},
 						//{name: "Ethereum", url:"https://eth.horizontalsystems.xyz", imgUrl:"/img/logo/eth.svg"},
                                                 {name: "Long Wallet", url:"https://longnetwork.github.io/", imgUrl:"/img/logo/long256.png"},
-                                                {name: "Long Exchange", url:"https://trade.crypton.cf", imgUrl:"/img/logo/OpenTrade6.png"},
-                                                {name: "Mining Pool", url:"http://longpool.crypton.cf/", imgUrl:"/img/logo/long256.png"},
+                                                {name: "Long Exchange", url:"https://altmarkets.io/", imgUrl:"/img/logo/altmarkets.jpg"},
+                                                {name: "Mining Pool", url:"https://longnomp.crypton.cf", imgUrl:"/img/logo/long256.png"},
                                                 //{name: "Mining Pool 2", url:"https://mnshare.info/", imgUrl:"https://mnshare.info/img/mnshare-300-300-pr.png"},
-                                                {name: "Long Community", url:"https://bitcointalk.org/index.php?topic=5235729", imgUrl:"/img/logo/bitcointalk.jpg"}                                                  
+                                                {name: "Long Community EN", url:"https://bitcointalk.org/index.php?topic=5235729", imgUrl:"/img/logo/bitcointalk.jpg"},                                                  
+                                                {name: "Long Community RU", url:"https://forum.bits.media/index.php?/topic/163664-long-network-%D0%B4%D0%B5%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F-%D1%81%D0%BE%D1%86-%D1%81%D0%B5%D1%82%D1%8C/", imgUrl:"/img/logo/bitsmedia.jpg"}
 					]
 				}
 			]
