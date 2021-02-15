@@ -154,6 +154,65 @@ router.get("/node-status", function(req, res, next) {
 	});
 });
 
+router.get("/totalbc", function(req, res, next) {
+	coreApi.getBlockchainInfo().then(function(getblockchaininfo) {
+		res.locals.getblockchaininfo = getblockchaininfo;
+
+        //console.log("TOTALBC blocks="+getblockchaininfo.blocks);
+
+        let blockreward = new Decimal(parseFloat(global.coinConfig.blockRewardFunction(getblockchaininfo.blocks)));
+
+        //console.log("TOTALBC reward="+blockreward);
+
+        res.send(utils.formatCurrencyAmount(blockreward*getblockchaininfo.blocks,req.session.currencyFormatType));
+        
+
+	/*	coreApi.getNetworkInfo().then(function(getnetworkinfo) {
+			res.locals.getnetworkinfo = getnetworkinfo;
+
+			coreApi.getUptimeSeconds().then(function(uptimeSeconds) {
+				res.locals.uptimeSeconds = uptimeSeconds;
+
+				coreApi.getNetTotals().then(function(getnettotals) {
+					res.locals.getnettotals = getnettotals;
+
+					res.render("node-status");
+
+					next();
+
+				}).catch(function(err) {
+					res.locals.userMessage = "Error getting node status: (id=0), err=" + err;
+
+					res.render("node-status");
+
+					next();
+				});
+			}).catch(function(err) {
+				res.locals.userMessage = "Error getting node status: (id=1), err=" + err;
+
+				res.render("node-status");
+
+				next();
+			});
+		}).catch(function(err) {
+			res.locals.userMessage = "Error getting node status: (id=2), err=" + err;
+
+			res.render("node-status");
+
+			next();
+		});
+
+    */
+        
+	}).catch(function(err) {
+		res.locals.userMessage = "Error getting node status: (id=3), err=" + err;
+
+		res.render("totalbc");
+
+		next();
+	});
+});
+
 router.get("/mempool-summary", function(req, res, next) {
 	coreApi.getMempoolInfo().then(function(getmempoolinfo) {
 		res.locals.getmempoolinfo = getmempoolinfo;
